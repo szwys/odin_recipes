@@ -1,8 +1,59 @@
+/* all HTML files */
+
 * {
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
 }
+
+ol {
+    list-style-type: upper-roman;
+}
+
+img {
+    height: 400px;
+    width: auto;
+    border: 1px solid darkred;
+}
+
+/* index.html */
 
 .menu {
     list-style: none;
+}
+
+.chef-img {
+    border-style: none;
+}
+
+/* spaghetti.html */
+
+@counter-style spaghetti-list {
+    system: cyclic;
+    symbols: '🍝';
+    suffix: '  ';
+}
+
+.spaghetti-ingredients,
+.spaghetti-ingredients ul {
+    list-style-type: spaghetti-list;
+}
+
+/* lasagna.html */
+
+.lasagna-ingredients {
+    list-style: square;
+}
+
+/* pizza.html */
+
+@counter-style pizza-list {
+    system: cyclic;
+    symbols: '🍕';
+    suffix: '  ';
+}
+
+.pizza-ingredients,
+.pizza-ingredients ul {
+    list-style-type: pizza-list;
 }
